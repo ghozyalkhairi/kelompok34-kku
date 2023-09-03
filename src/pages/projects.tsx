@@ -1,10 +1,8 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import MainLayout from "@/components/layout/MainLayout";
-import Hero from "@/components/shared/Hero";
-import TheTeam from "@/components/shared/TheTeam";
-import TeamVideo from "@/components/shared/TeamVideo";
-import TeamProfile from "@/components/shared/TeamProfile";
+import OurProjects from "@/components/shared/OurProjects";
+import ProjectList from "@/components/shared/ProjectList";
 
 const Home: NextPage = () => {
   return (
@@ -19,10 +17,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <Hero />
-        <TheTeam />
-        <TeamVideo />
-        <TeamProfile />
+        <OurProjects />
+        <ProjectList />
       </MainLayout>
     </>
   );
