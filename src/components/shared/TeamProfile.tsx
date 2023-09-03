@@ -116,9 +116,11 @@ const TeamProfile: FC = () => {
                 <Image
                   src={team.pic}
                   alt={team.name}
-                  layout="fill"
-                  objectFit="cover"
                   quality={100}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
                 />
               </Box>
               <Box

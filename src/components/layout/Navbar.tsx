@@ -17,6 +17,9 @@ const Navbar: FC = () => {
         justifyContent="space-between"
         alignItems="center"
         py="2"
+        position="sticky"
+        top="0"
+        zIndex="100"
       >
         <Box
           onClick={onOpen}
