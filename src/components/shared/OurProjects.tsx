@@ -5,7 +5,7 @@ import LineDivider from "./LineDivider";
 const OurProjects: FC = () => {
   return (
     <Box w="100%" mt="4">
-      <Text fontSize="5xl" fontWeight="bold" color="brand.secondary">
+      <Text fontSize="4xl" fontWeight="bold" color="brand.secondary">
         OUR PROJECTS
       </Text>
       <LineDivider />

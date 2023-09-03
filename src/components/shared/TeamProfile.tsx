@@ -31,7 +31,7 @@ const teamList = [
   },
   {
     id: 3,
-    name: "Rahmad Muhammad Rifky",
+    name: "Rahmad M Rifky",
     pic: Rifky,
     prodi: "Teknik Informatika",
     instagram: "https://www.instagram.com/rahmadmrifky/",
