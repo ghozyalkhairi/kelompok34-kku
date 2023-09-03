@@ -99,6 +99,7 @@ const TeamProfile: FC = () => {
           showIndicators={true}
           showArrows={true}
           interval={4000}
+          swipeable={true}
         >
           {teamList.map((team) => (
             <Box

@@ -29,8 +29,8 @@ const Navbar: FC = () => {
         <Image
           src={Logo}
           alt="Study Image"
-          width={50}
-          height={50}
+          width={45}
+          height={45}
           style={{
             borderRadius: "100%",
           }}
