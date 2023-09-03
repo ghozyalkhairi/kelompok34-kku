@@ -82,134 +82,53 @@ const teamList = [
 
 const TeamProfile: FC = () => {
   return (
-    <>
-      <Box
-        w="100%"
-        mt="4"
-        display={{
-          base: "block",
-          md: "none",
-        }}
+    <Box w="100%" mt="4">
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        showIndicators={true}
+        showArrows={true}
+        interval={4000}
       >
-        <Carousel
-          autoPlay
-          infiniteLoop
-          showStatus={false}
-          showThumbs={false}
-          showIndicators={true}
-          showArrows={true}
-          interval={4000}
-          swipeable={true}
-        >
-          {teamList.map((team) => (
-            <Box
-              px="4"
-              w="100%"
-              borderRadius={10}
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-              key={team.id}
-            >
-              <Box w="100%" h="400px" position="relative">
-                <Image
-                  src={team.pic}
-                  alt={team.name}
-                  quality={100}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                  }}
-                />
-              </Box>
-              <Box
-                w="100%"
-                bg="brand.secondary"
-                borderRadius={10}
-                py="4"
-                color="brand.black"
-                position="relative"
-              >
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  mt="2"
-                  position="absolute"
-                  top="0"
-                  right="2"
-                >
-                  <a href={team.instagram} target="_blank">
-                    <InstagramIcon width={30} height={30} />
-                  </a>
-                </Box>
-                <Text fontWeight="bold" fontSize="24">
-                  {team.name}
-                </Text>
-                <Text fontWeight="semibold" fontSize="16">
-                  {team.prodi}
-                </Text>
-              </Box>
-            </Box>
-          ))}
-        </Carousel>
-      </Box>
-      <Box
-        w="100%"
-        mt="4"
-        display={{
-          base: "none",
-          md: "block",
-        }}
-      >
-        <Carousel
-          autoPlay
-          infiniteLoop
-          showStatus={false}
-          showThumbs={false}
-          showIndicators={true}
-          showArrows={true}
-          interval={4000}
-        >
-          {teamList.map((team) => (
-            <Box
-              px="4"
-              w="100%"
-              borderRadius={10}
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-              key={team.id}
-            >
-              <Image
-                src={team.pic}
-                alt={team.name}
-                width={400}
-                height={400}
-                quality={100}
-              />
+        {teamList.map((team) => (
+          <Box
+            px="4"
+            w="100%"
+            borderRadius={10}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            key={team.id}
+          >
+            <Image
+              src={team.pic}
+              alt={team.name}
+              width={400}
+              height={400}
+              quality={100}
+            />
 
-              <Box
-                w="100%"
-                bg="brand.secondary"
-                borderRadius={10}
-                py="4"
-                color="brand.black"
-              >
-                <Text fontWeight="bold" fontSize="24">
-                  {team.name}
-                </Text>
-                <Text fontWeight="semibold" fontSize="16">
-                  {team.prodi}
-                </Text>
-              </Box>
+            <Box
+              w="100%"
+              bg="brand.secondary"
+              borderRadius={10}
+              py="4"
+              color="brand.black"
+            >
+              <Text fontWeight="bold" fontSize="24">
+                {team.name}
+              </Text>
+              <Text fontWeight="semibold" fontSize="16">
+                {team.prodi}
+              </Text>
             </Box>
-          ))}
-        </Carousel>
-      </Box>
-    </>
+          </Box>
+        ))}
+      </Carousel>
+    </Box>
   );
 };
 
